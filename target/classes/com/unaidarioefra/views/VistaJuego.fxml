@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.unaidarioefra.controlador.JuegoControlador">
-    <!-- Contenido dinámico será añadido desde el controlador -->
-    <ImageView>
-        <image>
-            <Image url="@/com/unaidarioefra/images/imagen.png" />
-        </image>
-    </ImageView>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.unaidarioefra.Controlador.JuegoControlador">
+    <GridPane fx:id="gridPane" hgap="5" vgap="5">
+        <!-- Aquí se llenarán las celdas del GridPane con las imágenes -->
+    </GridPane>
+    <Label fx:id="lblVida" text="Vida: 20" />
 </AnchorPane>
